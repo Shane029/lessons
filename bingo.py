@@ -46,7 +46,7 @@ while True:
         break
     
     else:
-        # print(number_list)
+        
         temp = random.randint(1, len(number_list) - 1)
         number = number_list[temp]
         
