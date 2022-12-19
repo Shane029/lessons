@@ -11,6 +11,7 @@
 spiral = []
 row = []
 n = int(input('N = '))
+print()
 count = 1
 for i in range(int(n)):
     for j in range(int(n)):
@@ -32,7 +33,7 @@ right = 1
 right_count = 1
 right_count_n = 1
 
-while count != n * n + +2:
+while count != n * n  :
 
     
     if down != int(n / 2)  + 2:
@@ -65,14 +66,16 @@ while count != n * n + +2:
         right_count += 1
         right -=1
         right_count_n += 1
-    
         count += 1  
+        
 for i in range(n):
     for j in range(n):
         if(spiral[i][j]) < 10:
+            print(f'  {spiral[i][j]}', end = '   ')
+        elif spiral[i][j] < 100:
             print(f' {spiral[i][j]}', end = '   ')
         else:
-            print(f'{spiral[i][j]}', end = '   ')
-        
+            print(f'{spiral[i][j]}', end = '   ')          
+    print()
     print()
     

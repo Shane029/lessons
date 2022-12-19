@@ -11,16 +11,20 @@ while sum <= count:
 print (f'The triangle is  {quant} X {quant}')
 
 for i in range(quant ):
-    
-    print( tiv, end = ' ')
-    
+    if tiv < 10:
+        print( f'{tiv} ', end = '')
+    else:
+        print( f'{tiv}', end = '')
     for j in range(0, i ):
         
         f = f +  tiv + quant - j -1
-        if tiv < 10:
-            print(f' {f}', end = ' ')
-        else:
-            print(f'{f} ', end = ' ')
+        if f < 10:
+            print(f'  {f} ', end = '')
+        elif f < 100:
+            print(f'   {f} '   , end = ' ')
+        elif f >= 100:
+            print(f'  {f} ', end = ' ')
+            
         f = f - tiv
         
     f = 0
