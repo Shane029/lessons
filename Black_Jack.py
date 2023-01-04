@@ -1,4 +1,7 @@
 '''Black Jack'''
+import os
+
+os.system('clear')
 import random
 import time
 
@@ -89,6 +92,8 @@ print("Let's start")
 print()
 print('shuffling...\n')
 time.sleep(random.uniform(0, 1.9))
+os.system('clear')
+
 print('Your cards:    ', end = '')
 player.user_cards()
 print('Your points:    ', player.user_cards_count_number())
